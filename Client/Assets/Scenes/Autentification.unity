@@ -20056,6 +20056,7 @@ GameObject:
   - component: {fileID: 2060696132}
   - component: {fileID: 2060696131}
   - component: {fileID: 2060696130}
+  - component: {fileID: 2060696134}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -20155,6 +20156,28 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &2060696134
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2060696129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ef44ffb8a86653439befc0fb3ee1bb7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Authentication: {fileID: 1023916561}
+  Register1: {fileID: 1122525147}
+  Register2: {fileID: 1743517528}
+  Verify: {fileID: 1461811734}
+  Done: {fileID: 1022093771}
+  Logged: {fileID: 243983818}
+  Login: {fileID: 1857995106}
+  ResetPassword: {fileID: 2092072852}
+  VerifyEmail: {fileID: 1550900219}
+  SetNewPassword: {fileID: 1528248460}
 --- !u!1 &2068608163
 GameObject:
   m_ObjectHideFlags: 0
