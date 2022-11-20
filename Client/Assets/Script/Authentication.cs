@@ -8,42 +8,45 @@ using UnityEngine.SceneManagement;
 public class Authentication : MonoBehaviour
 {
 
-    [SerializeField] private TextMeshProUGUI alerttext;
+    [SerializeField] private TextMeshProUGUI Registeralerttext;
+    [SerializeField] private TextMeshProUGUI Loginalerttext;
     [SerializeField] private Button loginbutton;
     [SerializeField] private Button Createbutton;
-    [SerializeField] private InputField usernameImput;
-    [SerializeField] private InputField PasswordImput;
+    [SerializeField] private InputField RegisterusernameImput;
+    [SerializeField] private InputField RegisterPasswordImput;
+    [SerializeField] private InputField LoginusernameImput;
+    [SerializeField] private InputField LoginPasswordImput;
     [SerializeField] private string LoginEndpoint = "http://127.0.0.1:13756/account/login";
     [SerializeField] private string CreateEndpoint = "http://127.0.0.1:13756/account/create";
 
     public void OnLoginClick()
     {
-        alerttext.text = "Signing In";
-       ActivateButtons(false);
+        Loginalerttext.text = "Signing In";
+    //    ActivateButtons(false);
         StartCoroutine(TryLogin());
     }
     
     public void OnCreateClick()
     {
-        alerttext.text = "Creating Account..";
-        ActivateButtons(false);
+        Registeralerttext.text = "Creating Account..";
+        // ActivateButtons(false);
         StartCoroutine(TryCreate());
     }
 
     private IEnumerator TryLogin()
     {
-        string Username = usernameImput.text;
-        string Password = PasswordImput.text;
+        string Username = LoginusernameImput.text;
+        string Password = LoginPasswordImput.text;
 
         if (Username.Length < 3 || Username.Length > 24)
         {
-            alerttext.text = "Invalid Username";
+            Loginalerttext.text = "Invalid Username";
             loginbutton.interactable = true;
             yield break;
         }
         if (Password.Length < 1 || Password.Length > 24)
         {
-            alerttext.text = "Invalid Password";
+            Loginalerttext.text = "Invalid Password";
             loginbutton.interactable = true;
             yield break;
         }
@@ -68,27 +71,29 @@ public class Authentication : MonoBehaviour
 
         if (request.result == UnityWebRequest.Result.Success)
         {
+            Debug.Log(request.result);
+            Debug.Log(UnityWebRequest.Result.Success);
+            Debug.Log(request.downloadHandler.text);
             if (request.downloadHandler.text != "Invalid Credentials")
             {
-                alerttext.text = "Welcome";
-                ActivateButtons(false);
+                Loginalerttext.text = "Welcome";
+                // ActivateButtons(false);
                 // GameAccounts returnedAccount = JsonUtility.FromJson<GameAccounts>(request.downloadHandler.text);
-                alerttext.text = "Welcome " + request.downloadHandler.text;
+                Loginalerttext.text = "Welcome " + request.downloadHandler.text;
                 yield return  new WaitForSeconds(2);
 
-                SceneManager.LoadScene("4.AISystem");
             }
             else
             {
-                alerttext.text = "Invalid Credentials";
-                ActivateButtons(true);
+                Loginalerttext.text = "Invalid Credentials";
+                // ActivateButtons(true);
             }
             
         }
         else
         {
-            alerttext.text = "Error";
-           ActivateButtons(true);
+            Loginalerttext.text = "Error";
+        //    ActivateButtons(true);
         }
         
         
@@ -99,19 +104,19 @@ public class Authentication : MonoBehaviour
 
     private IEnumerator TryCreate()
     {
-        string Username = usernameImput.text;
-        string Password = PasswordImput.text;
+        string Username = RegisterusernameImput.text;
+        string Password = RegisterPasswordImput.text;
 
         if (Username.Length < 3 || Username.Length > 24)
         {
-            alerttext.text = "Invalid Username";
-            ActivateButtons(true);
+            Registeralerttext.text = "Invalid Username";
+            // ActivateButtons(true);
             yield break;
         }
         if (Password.Length < 1 || Password.Length > 24)
         {
-            alerttext.text = "Invalid Password";
-            ActivateButtons(true);
+            Registeralerttext.text = "Invalid Password";
+            // ActivateButtons(true);
             yield break;
         }
 
@@ -138,27 +143,27 @@ public class Authentication : MonoBehaviour
             if (request.downloadHandler.text != "Invalid Credentials" && request.downloadHandler.text != "Username Is Already Taken")
             {
                 // GameAccounts returnedAccount = JsonUtility.FromJson<GameAccounts>(request.downloadHandler.text);
-                alerttext.text = "Account Created Successfully....";
+                Registeralerttext.text = "Account Created Successfully....";
             }
             else
             {
-                alerttext.text = "Username Is Already Taken";
+                Registeralerttext.text = "Username Is Already Taken";
             }
             
         }
         else
         {
-            alerttext.text = "Error";
+            Registeralerttext.text = "Error";
         }
         
-        ActivateButtons(true);
+        // ActivateButtons(true);
         yield return null;
     }
 
     
-    void ActivateButtons(bool Toggle)
+    public void initAlert()
     {
-        loginbutton.interactable = Toggle;
-        Createbutton.interactable = Toggle;
+        Registeralerttext.text = "";
+        Loginalerttext.text = "";
     }
 }
