@@ -52,7 +52,7 @@ public class Authentication : MonoBehaviour
         }
 
         WWWForm form = new WWWForm();
-        form.AddField("RUusername", Username);
+        form.AddField("REmail", Username);
         form.AddField("RPassword", Password);
         UnityWebRequest request = UnityWebRequest.Post(LoginEndpoint, form);
         var handler = request.SendWebRequest();
@@ -121,7 +121,7 @@ public class Authentication : MonoBehaviour
         }
 
         WWWForm form = new WWWForm();
-        form.AddField("RUusername", Username);
+        form.AddField("REmail", Username);
         form.AddField("RPassword", Password);
         UnityWebRequest request = UnityWebRequest.Post(CreateEndpoint, form);
         var handler = request.SendWebRequest();
