@@ -14,6 +14,7 @@ public class CanvasManager : MonoBehaviour
     public Transform ResetPassword;
     public Transform VerifyEmail;
     public Transform SetNewPassword;
+    public GameObject ConfirmLogout;
 
     // Start is called before the first frame update
     void Start()
@@ -49,7 +50,12 @@ public class CanvasManager : MonoBehaviour
     }
     
     public void Go_Logged() {
+        ConfirmLogout.SetActive(false);
         Logged.SetAsLastSibling();
+    }
+
+    public void Confirm_Logout() {
+        ConfirmLogout.SetActive(true);
     }
 
     public void Go_Login() {
