@@ -1,1 +1,7 @@
-client
+Client/Library
+Client/Temp
+Client/Logs
+Client/Object
+Client/UserSetting
+Client/Build
+
