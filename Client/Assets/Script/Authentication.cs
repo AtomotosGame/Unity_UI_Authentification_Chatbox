@@ -77,8 +77,6 @@ public class Authentication : MonoBehaviour
             if (request.downloadHandler.text != "Invalid Credentials")
             {
                 Loginalerttext.text = "Welcome";
-                // ActivateButtons(false);
-                // GameAccounts returnedAccount = JsonUtility.FromJson<GameAccounts>(request.downloadHandler.text);
                 Loginalerttext.text = "Welcome " + request.downloadHandler.text;
                 yield return  new WaitForSeconds(2);
 
@@ -86,14 +84,12 @@ public class Authentication : MonoBehaviour
             else
             {
                 Loginalerttext.text = "Invalid Credentials";
-                // ActivateButtons(true);
             }
             
         }
         else
         {
             Loginalerttext.text = "Error";
-        //    ActivateButtons(true);
         }
         
         
@@ -110,13 +106,11 @@ public class Authentication : MonoBehaviour
         if (Username.Length < 3 || Username.Length > 24)
         {
             Registeralerttext.text = "Invalid Username";
-            // ActivateButtons(true);
             yield break;
         }
         if (Password.Length < 1 || Password.Length > 24)
         {
             Registeralerttext.text = "Invalid Password";
-            // ActivateButtons(true);
             yield break;
         }
 
@@ -142,7 +136,6 @@ public class Authentication : MonoBehaviour
         {
             if (request.downloadHandler.text != "Invalid Credentials" && request.downloadHandler.text != "Username Is Already Taken")
             {
-                // GameAccounts returnedAccount = JsonUtility.FromJson<GameAccounts>(request.downloadHandler.text);
                 Registeralerttext.text = "Account Created Successfully....";
             }
             else
@@ -156,7 +149,6 @@ public class Authentication : MonoBehaviour
             Registeralerttext.text = "Error";
         }
         
-        // ActivateButtons(true);
         yield return null;
     }
 
