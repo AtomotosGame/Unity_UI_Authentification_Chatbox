@@ -33,6 +33,11 @@ public class Authentication : MonoBehaviour
         StartCoroutine(TryCreate());
     }
 
+    public void OnUpdateClick()
+    {
+        StartCoroutine(TryUpdate());
+    }
+
     private IEnumerator TryLogin()
     {
         string Username = LoginusernameImput.text;
@@ -152,6 +157,71 @@ public class Authentication : MonoBehaviour
         yield return null;
     }
 
+    private IEnumerator TryUpdate()
+    {
+        string ID = "637bd7738fb8637d72e0dbd6";
+        string playerName = "PlayerName2";
+        var level = 3;
+
+        string UpdateEndpoint = "http://127.0.0.1:13756/account/update";
+        string GetInfopoint = "http://127.0.0.1:13756/account/info?id=637bd7738fb8637d72e0dbd6";
+
+
+        UnityWebRequest request1 = UnityWebRequest.Get(GetInfopoint);
+        var handler1 = request1.SendWebRequest();
+        float startTime1 = 0.0f;
+        while (!handler1.isDone)
+        {
+            startTime1 += Time.deltaTime;
+
+            if (startTime1 > 10.0f)
+            {
+                break;
+            }
+            yield return null;
+        }
+
+        Debug.Log(request1.downloadHandler.text);
+
+        WWWForm form = new WWWForm();
+        form.AddField("id", ID); // you must send ID
+        form.AddField("playerName", playerName);
+        form.AddField("level", level);
+        UnityWebRequest request = UnityWebRequest.Post(UpdateEndpoint, form);
+
+        var handler = request.SendWebRequest();
+
+        float startTime = 0.0f;
+        while (!handler.isDone)
+        {
+            startTime += Time.deltaTime;
+
+            if (startTime > 10.0f)
+            {
+                break;
+            }
+            yield return null;
+        }
+
+        if (request.result == UnityWebRequest.Result.Success)
+        {
+            if (request.downloadHandler.text != "Invalid Credentials")
+            {
+                Registeralerttext.text = "Update Successful";
+            }
+            else
+            {
+                Registeralerttext.text = "Username Is Already Taken";
+            }
+            
+        }
+        else
+        {
+            Registeralerttext.text = "Error";
+        }
+        
+        yield return null;
+    }
     
     public void initAlert()
     {
