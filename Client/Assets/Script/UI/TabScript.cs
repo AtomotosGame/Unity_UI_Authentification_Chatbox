@@ -12,6 +12,8 @@ public class TabScript : MonoBehaviour
     public Sprite ActiveBackground;
     public Sprite DeactiveBackground;
     
+    public bool showHideFlag;
+    public GameObject showHideGameObject;
 
     void Start()
     {
@@ -32,5 +34,9 @@ public class TabScript : MonoBehaviour
 
         TabButtons[num].GetComponent<Image> ().sprite  = ActiveBackground;
         TabBodys[num].SetActive(true);
+    }
+
+    public void showHide () {
+        showHideGameObject.SetActive(!showHideFlag);
     }
 }
