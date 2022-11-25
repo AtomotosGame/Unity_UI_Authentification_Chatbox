@@ -745,7 +745,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 200
+  m_Text: 500
 --- !u!222 &29854768
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1737,8 +1737,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -23.7, y: 175}
-  m_SizeDelta: {x: 273.7, y: 53.6}
+  m_AnchoredPosition: {x: -24, y: 162}
+  m_SizeDelta: {x: 273.7, y: 55.88}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &78886297
 MonoBehaviour:
@@ -1803,7 +1803,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Town Hall
+  m_Text: 'Cornflower
+
+    Bed'
 --- !u!222 &78886300
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7246,7 +7248,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 4/4
+  m_Text: 0/4
 --- !u!222 &275404720
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7292,7 +7294,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 51.2, y: 3}
+  m_AnchoredPosition: {x: 76.00006, y: 3}
   m_SizeDelta: {x: 160, y: 35.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &276342621
@@ -7358,7 +7360,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Sm
+  m_Text: None
 --- !u!222 &276342624
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -11678,7 +11680,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 3f6bcd3b92d0ce2428df88501db8192a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: cba8c28b9c8633c44bb5a5987c908157, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -12467,7 +12469,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 200
+  m_Text: 500
 --- !u!222 &461997975
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -13437,7 +13439,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 4/4
+  m_Text: 0/4
 --- !u!222 &492904625
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -15012,7 +15014,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 43df6e38ffcac3a41a7847f75feceae1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: cba8c28b9c8633c44bb5a5987c908157, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -15352,8 +15354,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 11200}
+  m_AnchoredPosition: {x: -0, y: -0.00035777222}
+  m_SizeDelta: {x: 0, y: 1850}
   m_Pivot: {x: 0, y: 1}
 --- !u!1 &568877476
 GameObject:
@@ -15536,7 +15538,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 200
+  m_Text: 500
 --- !u!222 &571990062
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -16284,7 +16286,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: b4d8e769dd1ea1a489a5cc080f2ba14e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: cba8c28b9c8633c44bb5a5987c908157, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -21017,7 +21019,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 200
+  m_Text: 500
 --- !u!222 &769761279
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -24996,7 +24998,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &934014110
 RectTransform:
   m_ObjectHideFlags: 0
@@ -30707,7 +30709,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 4/4
+  m_Text: 0/4
 --- !u!222 &1184893235
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -31264,7 +31266,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 51.2, y: 3}
+  m_AnchoredPosition: {x: 76, y: 3}
   m_SizeDelta: {x: 160, y: 35.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1220105889
@@ -31330,7 +31332,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Sm
+  m_Text: None
 --- !u!222 &1220105892
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -33008,7 +33010,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 51.2, y: 3}
+  m_AnchoredPosition: {x: 76.00006, y: 3}
   m_SizeDelta: {x: 160, y: 35.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1263688696
@@ -33074,7 +33076,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Sm
+  m_Text: None
 --- !u!222 &1263688699
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -33298,7 +33300,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 4/4
+  m_Text: 0/4
 --- !u!222 &1273346942
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -33637,7 +33639,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: WareHouse
+  m_Text: Touch
 --- !u!222 &1293862461
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -34016,7 +34018,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Clan Castle
+  m_Text: Sunflowere Bed
 --- !u!222 &1307481897
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -35803,7 +35805,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 200
+  m_Text: 500
 --- !u!222 &1378916330
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -40808,7 +40810,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1590606231
 RectTransform:
   m_ObjectHideFlags: 0
@@ -42130,7 +42132,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 4/4
+  m_Text: 0/4
 --- !u!222 &1633138772
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -44233,7 +44235,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1.0001831, y: 5409.001}
+  m_AnchoredPosition: {x: 1, y: 748}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1745527377
@@ -45383,7 +45385,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1788192777
 RectTransform:
   m_ObjectHideFlags: 0
@@ -46074,7 +46076,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 51.2, y: 3}
+  m_AnchoredPosition: {x: 76.00006, y: 3}
   m_SizeDelta: {x: 160, y: 35.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1814251936
@@ -46140,7 +46142,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Sm
+  m_Text: None
 --- !u!222 &1814251939
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -46408,7 +46410,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 5559f68bebe153443813a1b5461cd1ae, type: 3}
+  m_Sprite: {fileID: 21300000, guid: cba8c28b9c8633c44bb5a5987c908157, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -47242,7 +47244,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1845422830
 RectTransform:
   m_ObjectHideFlags: 0
@@ -48256,7 +48258,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 0b30ff83e3b9f0b4483d09daf9cf6d3c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: cba8c28b9c8633c44bb5a5987c908157, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -49561,7 +49563,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 51.2, y: 3}
+  m_AnchoredPosition: {x: 76.00006, y: 3}
   m_SizeDelta: {x: 160, y: 35.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1938246284
@@ -49627,7 +49629,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Sm
+  m_Text: None
 --- !u!222 &1938246287
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -50287,7 +50289,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Arena
+  m_Text: Weatherr Vane
 --- !u!222 &1958403338
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -51290,7 +51292,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Builder's Hut
+  m_Text: Touch
 --- !u!222 &2006044454
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -53606,7 +53608,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2134297910
 RectTransform:
   m_ObjectHideFlags: 0
@@ -54038,8 +54040,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1906380862}
   m_HandleRect: {fileID: 1906380861}
   m_Direction: 2
-  m_Value: 1
-  m_Size: 0.1641964
+  m_Value: 1.0000111
+  m_Size: 0.9940538
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
