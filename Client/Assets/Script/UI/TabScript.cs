@@ -9,6 +9,8 @@ public class TabScript : MonoBehaviour
 
     public Transform [] TabButtons;
     public GameObject [] TabBodys;
+    public Sprite [] ActiveBack;
+    public Sprite [] DeactiveBack;
     public Sprite ActiveBackground;
     public Sprite DeactiveBackground;
     
@@ -41,5 +43,15 @@ public class TabScript : MonoBehaviour
 
     public void hide () {
         showHideGameObject.SetActive(false);
+    }
+
+    public void SelectPicButton (int num) {
+        for (int i = 0 ; i < TabButtons.Length; i++ ) {
+            TabButtons[i].GetComponent<Image> ().sprite  = DeactiveBack[i];
+            TabBodys[i].SetActive(false);
+        }
+
+        TabButtons[num].GetComponent<Image> ().sprite  = ActiveBack[num];
+        TabBodys[num].SetActive(true);
     }
 }
